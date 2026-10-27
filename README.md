@@ -29,3 +29,5 @@
 git init
 git config --list
 git confif --global user.email "minseonggang7@gmail.com"
+
+```
