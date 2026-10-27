@@ -17,3 +17,15 @@
 
 1. 숫자1
 2. 숫자2
+
+---
+
+# 2026-10-27 TIL Git / Github
+
+## 오늘의 Git 명령어
+
+```sh
+
+git init
+git config --list
+git confif --global user.email "minseonggang7@gmail.com"
