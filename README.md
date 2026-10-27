@@ -1,4 +1,4 @@
-# ** 2026-10-27 TUE 오늘의 TIL : Git 명령어와 Git commint 하는 방법 + 내 GitHub에 push하는 방법 **
+# 2026-10-27 TUE 오늘의 TIL : Git 명령어와 Git commint 하는 방법 + 내 GitHub에 push하는 방법
 ### **1. 명령어**
 
 rm 은 파일 삭제
