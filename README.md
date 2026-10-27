@@ -5,7 +5,7 @@ rm 은 파일 삭제
 
 -rf  강제로 삭제
 
-echo, >(리다이액션), cat(보기)
+echo, >(리다이액션), cat(파일 내용을 터미널에 출력)
 
 code . → vscode로 넘어감
 
@@ -31,9 +31,12 @@ git log —oneline —all 모든 commit한거 한 줄로 보여주기
 
 ### 2.  Vs에서 Git 설정
 
-이름 설정 —global(전체로 바꾸는거)—local
+Git을 사용하기 전엔 내 이름과 이메일 같은 정보들로 내가 수정했다고 증명해야하기에 이름을 설정해야한다.
+이때, global은 전체 사용자 설정이고, local은 현재 저장소에서 나타내는 정보이다.
 
-→ git config global user.email(name) 이메일, 이름 변경
+git config --global user.email, git config --global user.name 이렇게 해서 설정한다.
+
+→ git config global user.email(name) "이메일" 이메일, 이름 변경
 
 git config —list하면 확인할 수 있음
 
@@ -49,9 +52,9 @@ git add + 파일명
 
 만약, 전으로 돌아가고 싶다면, checkout 명령어를 사용하면 된다.
 
-git log를 확인한 뒤에, 돌아가고 싶은 곳의 대쉬값을 가져와서,
+git log를 확인한 뒤에, 돌아가고 싶은 곳의 해시값을 가져와서,
 
-git checkout 대쉬값 하면 돌아가고 싶은 곳으로 돌아간다.
+git checkout 해시값 하면 돌아가고 싶은 곳으로 돌아간다.
 
 다시 원상복구를 희망한다면, 원래의 대쉬값, 브런치명을 checkout 뒤에 써주면 돌아갈 수 있다.
 
@@ -71,12 +74,22 @@ git remote -v origin URL 이렇게 하면 연결이 됨.
 
 다시 확인해보면 
 
-fetch,push 가 나올텐데 여기서 fetch는 새로운 무언가가 있다는 뜻
+fetch,push 가 나올텐데 여기서 
 
-push는 올리는 용도
+fetch는 원격 저장소의 변경 이력을 가져오는 작업을 뜻하고
+
+push는 로컬 커밋을 원격 저장소에 업로드하는 작업을 뜻한다.
 
 이제 브렌치에 올려보자 
 
 git push origin(별명) main(브렌치)
+
+---
+
+### 5. git add를 하고 git commit하는 이유는?
+
+결론적으로 말하자면, git add는 저장할 변경 사항을 선택하는 과정이고, git commit은 선택한 변경 사항을 실제 기록으로 남기는 과정이다.
+
+사진으로 이해해보자![add,commit 사진](image.png)
 
 ---
