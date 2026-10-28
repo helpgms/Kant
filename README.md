@@ -70,7 +70,7 @@ git remote -v  연결이 안되어있을 경우 아무것도 안뜸
 
 그러면 연결해보자
 
-git remote -v origin URL 이렇게 하면 연결이 됨.
+git remote add origin URL 이렇게 하면 연결이 됨.
 
 다시 확인해보면 
 
