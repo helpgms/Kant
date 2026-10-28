@@ -90,6 +90,7 @@ git push origin(별명) main(브렌치)
 
 결론적으로 말하자면, git add는 저장할 변경 사항을 선택하는 과정이고, git commit은 선택한 변경 사항을 실제 기록으로 남기는 과정이다.
 
-사진으로 이해해보자![add,commit 사진](image.png)
-
+사진으로 이해해보자!
+[add,commit 사진](image.png)
+[add, commit 과정]
 ---
