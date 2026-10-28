@@ -92,5 +92,5 @@ git push origin(별명) main(브렌치)
 
 사진으로 이해해보자!
 [add,commit 사진](image.png)
-[add, commit 과정]
+
 ---
